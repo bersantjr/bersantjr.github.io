@@ -1,0 +1,166 @@
+/*Estilo geral*/	
+html, body{
+  min-height:100%;
+}
+
+img{
+  max-width: 100%;
+}
+
+h1{
+  font-family: Arial;
+  font-size: 30px;
+  text-align: center;
+  color: wheat;
+  text-indent: 0;
+}
+
+h2{
+  font-family: Brush Script MT;
+  font-size: 25px;
+  text-align: left;
+  color: brown;
+  text-indent: 0;
+}
+
+.h2_2{
+  font-family: Arial;
+  font-size: 25px;
+  text-align: left;
+  color: brown;
+  text-indent: 0;
+}
+
+p{
+  font-family: Brush Script MT;
+  font-size: 20px;
+  text-align: justify;
+  color: black;
+  text-indent: 50px;
+}
+
+.p_2{
+  font-family: Brush Script MT;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  text-indent: 0px;
+}
+
+/*Estilo do menu*/	
+#cabecalho_1{
+  width:100%;
+  height: 70px;
+  top: 0px;
+  left: 0px;
+  border: 0px;
+  position: relative;
+  padding: 1px;
+  background: brown;  
+  background-image: url("logo_mass.jpg");
+  background-repeat: repeat-x;
+  }
+  
+ #cabecalho_2{
+  width:100%;
+  height: 70px;
+  top: 0px;
+  left: 0px;
+  border: 0px;
+  position: relative;
+  padding: 1px;
+  background: darkgreen;
+  }
+  
+  #rodape{
+    width:100%;
+    height: 60px;
+    background: wheat;  
+    }
+
+a:link, a:visited, a:active {
+	text-decoration: none;
+	}
+a:hover {
+	text-decoration: overline underline;
+	color:brown;
+	font-size:90%;
+	}
+
+.MenuTipoDropDown ul {
+  list-style-type: none;
+  padding: 0;
+	background-color: darkblue /*cor do fundo*/;
+}
+
+.MenuTipoDropDown ul li {
+  display: inline;
+  position: relative;
+	margin-right: 20px;
+}
+
+.MenuTipoDropDown ul li a {
+  color: white /*cor da fonte do menu*/;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+	transition: background .2s;
+}
+
+.MenuTipoDropDown ul li a:hover {
+  background-color: blue /*cor da transição*/;
+	color:white;
+}
+
+.MenuTipoDropDown ul ul {
+  display: none;
+  left: 0;
+  position: absolute;
+}
+
+.MenuTipoDropDown ul li:hover ul {
+  display: block;
+	color:white;
+}
+
+.MenuTipoDropDown ul ul {
+  width: 130px /*tamanho do bloco do menu dropdwon*/
+}
+
+.MenuTipoDropDown ul ul li a {
+  display: block;
+}
+
+/*Estilo para formulários e rótulos*/	
+form{
+  margin: 0;
+  width: 350px;
+  padding: 16px;
+  border: 1px solid brown;
+  border-radius: 16px;
+}
+label{ 
+  display:inline-block;
+  width: 90px;
+  color:brown;
+}
+
+/*Estilo do carrossel de imagens*/	
+#carrossel{
+                list-style:none;
+                width:1000px;
+                height:350px;
+                margin:0;
+                padding:0;
+                overflow: hidden;
+                position: relative;
+            }
+
+            #carrossel li{
+               position: absolute;
+               z-index: 0;               
+            }
+
+            #carrossel li.habilitaCarrossel{
+                z-index: 1;
+            }  		
