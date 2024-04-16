@@ -7,5 +7,5 @@ function aplicaCarrossel(){
                 }
     $(function(){
 		$("#carrossel li:first");
-         window.setInterval( "aplicaCarrossel()", 1500 );
+         window.setInterval( "aplicaCarrossel()", 2000 );
          });
